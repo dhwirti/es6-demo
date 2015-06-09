@@ -1,9 +1,9 @@
-class Character {
+import Model from '../core/model';
 
-	constructor (args) {
-		this.id = args.id;
-		this.firstName = args.firstName;
-		this.lastName = args.lastName;
+class Character extends Model {
+
+	constructor (fields) {
+		super(fields, '/characters');
 	}
 
 }

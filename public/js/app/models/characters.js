@@ -1,13 +1,12 @@
-class Characters {
+import Collection from '../core/collection';
+import Character from './character';
 
-	constructor () {
-		this.models = [];
+class Characters extends Collection {
+
+	constructor (characters) {
+		super(Character, '/characters', characters);
 	}
-
-	add (character) {
-		this.models.push(character);
-	}
-
+	
 }
 
 export default Characters;
